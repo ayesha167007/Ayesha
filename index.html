@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Israt Jahan Ayesha — Player Profile</title>
-<meta name="description" content="Interactive game-styled portfolio of Israt Jahan Ayesha — ITM student, creative designer and AI/data builder at Daffodil International University.">
+<meta name="description" content="Interactive game-styled portfolio of Israt Jahan Ayesha — ITM student, AI and data builder at Daffodil International University.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -44,7 +44,8 @@
     </button>
 
     <nav class="primary-nav" id="primaryNav">
-      <a href="#stats" class="nav-link">Stats</a>
+      <a href="#stats" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
       <a href="#achievements" class="nav-link">Achievements</a>
       <a href="#quests" class="nav-link">Quest log</a>
       <a href="#levelmap" class="nav-link">Level map</a>
@@ -61,25 +62,25 @@
     <div class="hero-card-inner">
 
       <div class="hero-avatar">
+        <img class="avatar-photo" src="profile-photo.jpg" alt="Profile photo of Israt Jahan Ayesha">
         <svg viewBox="0 0 200 200" class="avatar-svg" aria-hidden="true">
           <polygon points="100,6 186,52 186,148 100,194 14,148 14,52" class="avatar-hex-outer"/>
           <polygon points="100,26 168,62 168,138 100,174 32,138 32,62" class="avatar-hex-inner"/>
-          <text x="100" y="114" text-anchor="middle" class="avatar-text">IJA</text>
         </svg>
         <span class="hero-level" aria-hidden="true">LV. 6</span>
       </div>
 
       <p class="hero-kicker">ITM Student · Daffodil International University</p>
       <h1 class="hero-name">Israt Jahan Ayesha</h1>
-      <p class="hero-class">Creative Technologist <span class="hero-divider" aria-hidden="true"></span> Designer <span class="hero-divider" aria-hidden="true"></span> Builder</p>
+      <p class="hero-class">Tech Builder <span class="hero-divider" aria-hidden="true"></span> Data Enthusiast <span class="hero-divider" aria-hidden="true"></span> Problem Solver</p>
 
-      <p class="hero-tagline">Currently on Semester 6 of a BSc in Information Technology &amp; Management — leveling up equally in Adobe Illustrator and Python, with a trophy case of national competitions to show the grind.</p>
+      <p class="hero-tagline">Currently on Semester 7 of a BSc in Information Technology &amp; Management — building with Python, data tools and machine learning, with a trophy case of national AI and tech competitions to show the grind.</p>
 
       <div class="hero-progress">
         <div class="hero-progress-label">
-          <span>Semester 6 in progress</span>
+          <span>Semester 7 in progress</span>
         </div>
-        <div class="hero-progress-track" role="img" aria-label="Semester 6 in progress">
+        <div class="hero-progress-track" role="img" aria-label="Semester 7 in progress">
           <span class="hero-progress-fill" id="heroProgressFill"></span>
         </div>
       </div>
@@ -97,46 +98,69 @@
       <div class="panel-head">
         <span class="panel-index">01</span>
         <div>
-          <h2 class="panel-title">Character stats</h2>
-          <p class="panel-lede">Filled bars are mastered tools. Outlined ones are still leveling up.</p>
+          <h2 class="panel-title">Skills</h2>
         </div>
       </div>
 
       <div class="stat-groups">
-
         <div class="stat-group">
-          <h3 class="stat-group-title">Design arsenal</h3>
+          <h3 class="stat-group-title">Programming</h3>
           <ul class="stat-list" role="list">
-            <li class="stat" data-fill="92"><span class="stat-name">Adobe Illustrator</span><span class="stat-track"><span class="stat-fill"></span></span><span class="stat-tag stat-tag--mastered">Mastered</span></li>
-            <li class="stat" data-fill="90"><span class="stat-name">Canva</span><span class="stat-track"><span class="stat-fill"></span></span><span class="stat-tag stat-tag--mastered">Mastered</span></li>
-            <li class="stat" data-fill="45"><span class="stat-name">Adobe Photoshop</span><span class="stat-track"><span class="stat-fill"></span></span><span class="stat-tag stat-tag--leveling">Leveling up</span></li>
-            <li class="stat" data-fill="45"><span class="stat-name">Freepik</span><span class="stat-track"><span class="stat-fill"></span></span><span class="stat-tag stat-tag--leveling">Leveling up</span></li>
+            <li class="skill-item">Python</li>
+            <li class="skill-item">C</li>
+            <li class="skill-item">HTML &amp; CSS</li>
           </ul>
         </div>
-
         <div class="stat-group">
-          <h3 class="stat-group-title">Programming &amp; data</h3>
+          <h3 class="stat-group-title">Data &amp; analytics</h3>
           <ul class="stat-list" role="list">
-            <li class="stat" data-fill="80"><span class="stat-name">Python &amp; Pandas</span><span class="stat-track"><span class="stat-fill"></span></span><span class="stat-tag stat-tag--mastered">Mastered</span></li>
-            <li class="stat" data-fill="78"><span class="stat-name">SQL</span><span class="stat-track"><span class="stat-fill"></span></span><span class="stat-tag stat-tag--mastered">Mastered</span></li>
-            <li class="stat" data-fill="75"><span class="stat-name">HTML &amp; CSS</span><span class="stat-track"><span class="stat-fill"></span></span><span class="stat-tag stat-tag--mastered">Mastered</span></li>
-            <li class="stat" data-fill="72"><span class="stat-name">Power BI</span><span class="stat-track"><span class="stat-fill"></span></span><span class="stat-tag stat-tag--mastered">Mastered</span></li>
-            <li class="stat" data-fill="40"><span class="stat-name">C</span><span class="stat-track"><span class="stat-fill"></span></span><span class="stat-tag stat-tag--leveling">Leveling up</span></li>
+            <li class="skill-item">Pandas</li>
+            <li class="skill-item">NumPy</li>
+            <li class="skill-item">SQL</li>
+            <li class="skill-item">Power BI</li>
+            <li class="skill-item">Basic machine learning</li>
           </ul>
         </div>
-
         <div class="stat-group">
-          <h3 class="stat-group-title">Presentation &amp; party skills</h3>
+          <h3 class="stat-group-title">Professional</h3>
           <ul class="stat-list" role="list">
-            <li class="stat" data-fill="88"><span class="stat-name">PowerPoint</span><span class="stat-track"><span class="stat-fill"></span></span><span class="stat-tag stat-tag--mastered">Mastered</span></li>
-            <li class="stat" data-fill="90"><span class="stat-name">Leadership</span><span class="stat-track"><span class="stat-fill"></span></span><span class="stat-tag stat-tag--mastered">Mastered</span></li>
-            <li class="stat" data-fill="88"><span class="stat-name">Teamwork</span><span class="stat-track"><span class="stat-fill"></span></span><span class="stat-tag stat-tag--mastered">Mastered</span></li>
-            <li class="stat" data-fill="85"><span class="stat-name">Communication</span><span class="stat-track"><span class="stat-fill"></span></span><span class="stat-tag stat-tag--mastered">Mastered</span></li>
-            <li class="stat" data-fill="84"><span class="stat-name">Emotional intelligence</span><span class="stat-track"><span class="stat-fill"></span></span><span class="stat-tag stat-tag--mastered">Mastered</span></li>
+            <li class="skill-item">PowerPoint</li>
+            <li class="skill-item">Leadership</li>
+            <li class="skill-item">Teamwork</li>
+            <li class="skill-item">Communication</li>
+            <li class="skill-item">Emotional intelligence</li>
           </ul>
         </div>
-
       </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="panel panel--alt" id="projects" aria-label="Projects">
+    <div class="panel-inner">
+      <div class="panel-head">
+        <span class="panel-index">02</span>
+        <div>
+          <h2 class="panel-title">Projects</h2>
+          <p class="panel-lede">Selected work.</p>
+        </div>
+      </div>
+      <ul class="project-list" role="list">
+        <li class="project-item">
+          <div>
+            <h3 class="project-title">AI Travel Agent</h3>
+            <p class="project-description">An AI-powered travel planning project.</p>
+          </div>
+          <a class="project-link" href="https://github.com/ayesha167007/AI_Travel_Agent" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">&#8599;</span></a>
+        </li>
+        <li class="project-item">
+          <div>
+            <h3 class="project-title">LinkedIn Post Generator</h3>
+            <p class="project-description">A tool for generating LinkedIn posts.</p>
+          </div>
+          <a class="project-link" href="https://github.com/ayesha167007/linkedin_post_generator" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">&#8599;</span></a>
+        </li>
+      </ul>
     </div>
   </section>
 
@@ -144,10 +168,10 @@
   <section class="panel panel--alt" id="achievements" aria-label="Achievements">
     <div class="panel-inner">
       <div class="panel-head">
-        <span class="panel-index">02</span>
+        <span class="panel-index">03</span>
         <div>
           <h2 class="panel-title">Achievements unlocked</h2>
-          <p class="panel-lede">Tap a trophy — collect all ten and something extra happens.</p>
+          <p class="panel-lede">Tap a trophy — collect all nine and something extra happens.</p>
         </div>
       </div>
 
@@ -179,12 +203,6 @@
           <p class="ach-title">3rd position</p>
           <p class="ach-sub">Website Development Project Showcase</p>
           <span class="ach-flag">Departmental</span>
-        </li>
-
-        <li class="ach ach--silver" tabindex="0" data-ach>
-          <svg class="ach-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="5.2"/><path d="M8.3 12.4 5.5 21l6.5-3.4L18.5 21l-2.8-8.6"/></svg>
-          <p class="ach-title">4th position</p>
-          <p class="ach-sub">Art of Living exhibition, DIU</p>
         </li>
 
         <li class="ach ach--silver" tabindex="0" data-ach>
@@ -225,7 +243,7 @@
   <section class="panel" id="quests" aria-label="Roles and involvement">
     <div class="panel-inner">
       <div class="panel-head">
-        <span class="panel-index">03</span>
+        <span class="panel-index">04</span>
         <div>
           <h2 class="panel-title">Quest log</h2>
           <p class="panel-lede">The recurring roles behind the trophy case.</p>
@@ -238,14 +256,6 @@
           <div>
             <p class="quest-title">Joint Media &amp; Press Secretary</p>
             <p class="quest-org">ITM Club</p>
-          </div>
-          <span class="quest-status">Complete</span>
-        </li>
-        <li class="quest">
-          <svg class="quest-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>
-          <div>
-            <p class="quest-title">Creative Designer</p>
-            <p class="quest-org">Data Science Club</p>
           </div>
           <span class="quest-status">Complete</span>
         </li>
@@ -289,7 +299,7 @@
   <section class="panel panel--alt" id="levelmap" aria-label="Education">
     <div class="panel-inner">
       <div class="panel-head">
-        <span class="panel-index">04</span>
+        <span class="panel-index">05</span>
         <div>
           <h2 class="panel-title">Level map</h2>
           <p class="panel-lede">Tap a checkpoint to bring up the details. BSc in Information Technology &amp; Management, Daffodil International University.</p>
@@ -334,14 +344,14 @@
           <span class="level-node-label">S5<br><b>3.83</b></span>
         </button>
 
-        <button class="level-node is-current" data-title="BSc in ITM — Semester 6 (current)" data-school="Daffodil International University" data-score="CGPA 3.83" type="button">
+        <button class="level-node is-current" data-title="BSc in ITM — Semester 7 (current)" data-school="Daffodil International University" data-score="CGPA 3.83" type="button">
           <span class="level-node-dot"></span>
-          <span class="level-node-label">S6<br><b>3.83</b></span>
+          <span class="level-node-label">S7<br><b>3.83</b></span>
         </button>
       </div>
 
       <div class="level-detail" id="levelDetail">
-        <p class="level-detail-title" id="levelDetailTitle">BSc in ITM — Semester 6 (current)</p>
+        <p class="level-detail-title" id="levelDetailTitle">BSc in ITM — Semester 7 (current)</p>
         <p class="level-detail-school" id="levelDetailSchool">Daffodil International University</p>
         <p class="level-detail-score" id="levelDetailScore">CGPA 3.83</p>
       </div>
@@ -352,7 +362,7 @@
   <section class="panel" id="badges" aria-label="Certifications and projects">
     <div class="panel-inner">
       <div class="panel-head">
-        <span class="panel-index">05</span>
+        <span class="panel-index">06</span>
         <div>
           <h2 class="panel-title">Badge case</h2>
           <p class="panel-lede">Certifications and short programs, collected along the way.</p>
@@ -360,11 +370,6 @@
       </div>
 
       <ul class="badge-grid" role="list">
-        <li class="gbadge" tabindex="0">
-          <span class="gbadge-icon" aria-hidden="true"></span>
-          <p class="gbadge-title">Graphic Design Course</p>
-          <p class="gbadge-sub">E-Learning &amp; Earning Platform — social design, banners, branding</p>
-        </li>
         <li class="gbadge" tabindex="0">
           <span class="gbadge-icon" aria-hidden="true"></span>
           <p class="gbadge-title">Python Workshop</p>
@@ -393,10 +398,10 @@
   <section class="panel panel--alt" id="contact" aria-label="Contact">
     <div class="panel-inner">
       <div class="panel-head">
-        <span class="panel-index">06</span>
+        <span class="panel-index">07</span>
         <div>
           <h2 class="panel-title">Save file</h2>
-          <p class="panel-lede">Open to design work, data-flavoured projects, and the next competition.</p>
+          <p class="panel-lede">Open to tech roles, data-flavoured projects, and the next competition.</p>
         </div>
       </div>
 

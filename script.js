@@ -81,34 +81,6 @@ if (sections.length && navLinks.length && 'IntersectionObserver' in window) {
 }
 
 // ===================================================================
-// Stat bars: fill in once when scrolled into view
-// ===================================================================
-const statEls = document.querySelectorAll('.stat[data-fill]');
-if (statEls.length && 'IntersectionObserver' in window) {
-  const statObserver = new IntersectionObserver(
-    (entries, obs) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const el = entry.target;
-          const pct = el.getAttribute('data-fill');
-          const bar = el.querySelector('.stat-fill');
-          if (bar) bar.style.width = pct + '%';
-          obs.unobserve(el);
-        }
-      });
-    },
-    { threshold: 0.4 }
-  );
-  statEls.forEach((el) => statObserver.observe(el));
-} else {
-  // No IntersectionObserver support: just fill immediately
-  statEls.forEach((el) => {
-    const bar = el.querySelector('.stat-fill');
-    if (bar) bar.style.width = el.getAttribute('data-fill') + '%';
-  });
-}
-
-// ===================================================================
 // Achievements: pop animation + "collect them all" easter egg
 // ===================================================================
 const achEls = document.querySelectorAll('[data-ach]');
